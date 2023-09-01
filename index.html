@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.1.0/css/datepicker.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainWrapper">
+        <div class="row">
+            <!-- Left Side -->
+            <div class="col-md-1 left-side ">
+                <div class="icon">
+                    <a href="#"><img src="icons/eye-solid.svg" alt="eye-solid"></a>
+                    <hr style="margin-top: 30px; width: 100%;">
+                </div>
+
+                <div class="icons" style="margin-top:20px;">
+                    <a href="#">
+                        <div class="square-icon">
+                            <img src="icons/heart-pulse-solid.svg" alt="heart-pulse-solid">
+                        </div>
+                    </a>
+
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <div class="square-icon">
+                            <img src="icons/satellite-dish-solid.svg" alt="satellite-dish-solid">
+                        </div>
+                    </a>
+
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <div class="square-icon">
+                            <img src="icons/calendar-solid.svg" alt="calendar-solid">
+                        </div>
+                    </a>
+
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <div class="square-icon">
+                            <img src="icons/sliders-solid.svg" alt="sliders-solid">
+                        </div>
+                    </a>
+
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <div class="square-icon">
+                            <img src="icons/comments-regular.svg" alt="comments-regular">
+                        </div>
+                    </a>
+
+                </div >
+                <div class="footericon" style="padding-top: 500px; padding-bottom: 30px;">
+                    <a href="#"><img src="icons/arrow-right-from-bracket-solid.svg"
+                            alt="arrow-right-from-bracket-solid"></a>
+                </div>
+            </div>
+
+            <!-- Main Side -->
+
+            <div class="col-md-8 mainBody">
+
+                <!-- Filter icons and Last 15 Days text -->
+
+                <div class="row">
+                    <div class="col-md-12 topContext ">
+                        <div>
+                            <a href="#" class="icons"><img src="icons/table-list-solid.svg" alt="table-list-solid"></a>
+                            <a href="#" class="icons"><img src="icons/bars-solid.svg" alt="bars-solid"></a>
+                            <span class="right"> LAST 15 DAYS <img src="icons/chevron-down-solid.svg" alt="chevron-down-solid" class="icons"> </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Social Media Followers Count -->
+
+                <div class="row">
+
+                    <div class="col-md-12 socialMediaArea">
+
+                     
+                        <div class="twitter">
+                            <img src="icons/twitter.svg" alt="twitter" class="twitterIcon">
+                            <div class="title">280k</div>
+                            <div class="subtitle">Followers</div>
+                            <img src="icons/ellipsis-solid.svg" alt="ellipsis-solid" class="ellipsisIcon">
+
+                        </div>
+
+                     
+
+                        <div class="instagram">
+                            <img src="icons/instagram.svg" alt="instagram" class="instagramIcon">
+                            <div class="title">680k</div>
+                            <div class="subtitle">Followers</div>
+                            <img src="icons/ellipsis-solid.svg" alt="ellipsis-solid" class="ellipsisIcon">
+
+                        </div>
+
+                        <div class="youtube">
+                            <img src="icons/youtube.svg" alt="twitter" class="youtubeIcon">
+                            <div class="title">2.3M</div>
+                            <div class="subtitle">Followers</div>
+                            <img src="icons/ellipsis-solid.svg" alt="ellipsis-solid" class="ellipsisIcon">
+
+                        </div>
+
+                        <div class="facebook">
+                            <img src="icons/facebook-f.svg" alt="twitter" class="facebookIcon">
+                            <div class="title">50k</div>
+                            <div class="subtitle">Followers</div>
+                            <img src="icons/ellipsis-solid.svg" alt="ellipsis-solid" class="ellipsisIcon">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!-- Chart (maybe this area can be divide 3 rows area) -->
+
+                <div class="row">
+
+                    <div class="chartMainWrapper">
+                        <div class="headerWrapper">
+                            <p class="title">Instagram Subscribers</p>
+                            <div class="infoWrapper">
+                                <div class="gainbox">
+
+                                    <span class="gain-circle green"></span>
+                                    <span class="text">Gained</span>
+                                </div>
+                                <div class="lostbox">
+
+                                    <span class="gain-circle red"></span>
+                                    <span class="text">Lost</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainContentWrapper">
+                            <canvas width="100%" height="30" id="chart1"></canvas>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <!-- Key Metrics (clicks, likes ...etc) -->
+
+                <div class="row">
+                    <div class="footer">
+                        <div class=" keyMetrics">
+                            <p class="footer-title">Key Metrics</p>
+                        
+                                <div class="footer-subtitle">
+                                    <div>Clicks</div>
+                                    <div style="margin-left:365px ;">10k</div>
+                                </div>
+                                <hr style="margin-top: 2px; color: gray;">
+                                <div class="footer-subtitle">
+                                    <div>Likes</div>
+                                    <div  style="margin-left:370px ;">680</div>
+                                </div>
+                                <hr style="margin-top: 2px; color: gray;">
+                                <div class="footer-subtitle">
+                                    <div>Followers</div>
+                                    <div  style="margin-left:355px ;">8k</div>
+                                </div>
+                                <hr style="margin-top: 2px; color: gray;">
+                                <div class="footer-subtitle">
+                                    <div>Impressions</div>
+                                    <div  style="margin-left:330px ;"> 5500</div>
+                                </div>
+
+                        </div>
+                        <div class=" pageOtherInfo">
+                            <div class="title"> Engaged Users</div>
+                            <div class="data"> 12.2k</div>
+                            <div class="ratesEngaged"> <img src="icons/angles-up-solid.svg" alt="angles-up-solid" class="icon"> 19%</div>
+                        </div>
+                        <div class=" pageOtherInfo">
+                            <div class="title"> Page Impressions</div>
+                            <div class="data"> 8.6k</div>
+                            <div class="ratesImpressions"> <img src="icons/angles-down-solid.svg" alt="angles-down-solid" class="icon"> 9%</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <!-- Right Side -->
+
+            <div class="col-md-3 ">
+                <div class="right-top">
+                    <img src="icons/bell-regular.svg" alt="bell-regular" class="icons">
+                    <span class="context"> <img src="icons/gift-solid.svg" alt="gift" class="gift-icon"> 2 NEW UPDATES
+                    </span>
+                    <img src="icons/user-regular.svg" alt="user-regular" class="icons">
+                </div>
+                <div>
+                    <img src="images/rightSideImage.png" alt="graphicwithtwoPeople" class="graphicImage">
+                </div>
+
+                <div class="calendar" id="my-element"></div>
+
+               <div style="margin-top: 20px;">
+                <div class="user"> <img src="icons/hand-regular.svg" alt="hand-regular" class="icons"> Say hi to Laith
+                    Hart
+                   
+                        <img src="images/profilepicture-men.png" alt="" class="profilePicture">
+                  
+                </div>
+                <div class="user"><img src="icons/hand-regular.svg" alt="hand-regular" class="icons"> Say hi to Sidney
+                    Dyer
+                   
+                        <img src="images/profilepicture-women.png" alt="" class="profilePicture">                   
+                </div>
+               </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
